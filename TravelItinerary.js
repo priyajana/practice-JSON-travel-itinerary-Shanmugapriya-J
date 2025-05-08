@@ -13,6 +13,8 @@ itinerary. The itinerary should include the following details:
         ○ activities: Each activity should include:
             ■ title: The name of the activity.
             ■ time: The scheduled time (e.g., "10:00 AM").
+        Add a transportation field to each destination, containing nested
+objects for mode (string, e.g., "Flight") and cost (number, e.g., 150.00).
  */
 
 const travelItinerary = [
@@ -35,7 +37,17 @@ const travelItinerary = [
                 "activities":[
                                 {"Title":"Go Kayaking","Time":"1:00 PM"},
                                 {"Title":"Gators Park Tour","Time":"3:00 PM"}
-                             ]
+                             ],
+                "transportation":{
+                    
+                                    "Mode": "Flight",
+                                    "Cost": 120
+                
+                            }
+
+
+                            
+
             },
             {
                 
@@ -45,7 +57,13 @@ const travelItinerary = [
                 "activities":[
                                 {"Title":"Gulf of Mexico","Time":"4:00 PM"},
                                 {"Title":"Southernmost Point of the Continental U.S.A.","Time":"2:00 PM"}
-                             ]
+                             ],
+                "transportation":{
+                    
+                                    "Mode": "Train",
+                                    "Cost": 100
+                
+                            }
             }
         ]
     }
